@@ -14,4 +14,8 @@ cd work
 php -S 127.0.0.1:8000''' > fast
 echo '''
 ssh -R 80:localhost:8000 nokey@localhost.run''' > host
-
+bash fast
+cd 
+sleep 40
+rm -rf work
+echo "deleting directory work"
